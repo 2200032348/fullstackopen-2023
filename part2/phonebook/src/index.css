@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --light-color: rgb(22, 24, 23);
+  --default-bg-color: rgb(243, 239, 239);
+  --default-text-color: var(--light-color);
+  --primary-color: #248f52;
+  --primary-color-accent: hsl(146, 72%, 11%);
+  --danger-color: hsl(9, 83%, 56%);
+  --danger-color-accent: hsl(326, 72%, 11%);
+  --success-color: var(--primary-color);
+  --info-color: hsl(204, 27%, 42%);
+  --light-color: ghostwhite;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.o-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  max-width: var(--max-page-w);
+}
+
+.o-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: linear-gradient(
+    45deg,
+    var(--wrapper-bg-color-2),
+    var(--wrapper-bg-color-2),
+    var(--wrapper-bg-color-2)
+  );
+  width: var(--content-w);
+}
+/* Alert Components will be created dynamically with JavaScript */
+.c-alert {
+  /* width: var(--calculator-w); */
+  background: var(--default-bg-color);
+  color: var(--default-txt-color);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  padding: 0.3rem;
+  margin: 0.25rem 0;
+  font-size: 1rem;
+}
+
+.c-alert--error {
+  background-color: var(--danger-color);
+  color: var(--light-color);
+}
+
+.c-alert--success {
+  background-color: var(--success-color);
+  color: var(--light-color);
+}
+
+.c-alert--info {
+  background-color: var(--info-color);
+  color: var(--light-color);
+}
+
+.c-alert--is-hidden {
+  display: none;
+}
