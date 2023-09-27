@@ -1,0 +1,11 @@
+POST  http://localhost:3005/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwiaWQiOiI2MzUyOGE5ZWY5ZjE0NmNhOTA5MGQ5NDkiLCJpYXQiOjE2OTU4MTYxNjZ9.dbGFnPAfMtrN_p2ZJT9LZkYGLjzCsp3f3V3En3Z2wKk
+
+{
+    "title": "Blog from test_user to delete",
+    "author": "test_user",
+    "url": "http://blog-from-test-user.com",
+    "likes": 2,
+    "userId": "63528a9ef9f146ca9090d949"
+}
